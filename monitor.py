@@ -1,4 +1,5 @@
 import os
+import time
 import requests
 from bs4 import BeautifulSoup
 
@@ -31,4 +32,7 @@ def check_ticket():
         print("🛑 發生錯誤:", e)
 
 if __name__ == '__main__':
-    check_ticket()
+    while True:
+        check_ticket()
+        print("⏳ 等待五分鐘後再次檢查...")
+        time.sleep(5 * 60)  # 暫停 5 分鐘
