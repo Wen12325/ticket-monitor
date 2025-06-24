@@ -31,4 +31,4 @@ def check_ticket():
         print("🛑 發生錯誤:", e)
 
 if __name__ == '__main__':
-    check_ticket()
+    send_discord_notification("🧪 測試通知：Webhook 正常運作！")
